@@ -1,21 +1,21 @@
 /*fonts*/
 @font-face {
-    font-family: 'Kalameh';
+    font-family: Kalameh;
     font-weight: 900;
     font-style: normal;
-    src: url("../font/WebFonts/_Woff/KalamehWeb-Black.woff") format('woff');
+    src: url("../font/Kalameh/Kalameh-Black.ttf") format('truetype');
 }
 @font-face {
-    font-family: 'Kalameh';
+    font-family: Kalameh;
     font-weight: bold;
     font-style: normal;
-    src: url("../font/WebFonts/_Woff/KalamehWeb-Bold.woff") format('woff');
+    src: url("../font/Kalameh/Kalameh-Bold.ttf") format('truetype');
 }
 @font-face {
-    font-family: 'Kalameh';
+    font-family: Kalameh;
     font-weight: normal;
     font-style: normal;
-    src: url("../font/WebFonts/_Woff/KalamehWeb-Regular.woff") format('woff');
+    src: url("../font/Kalameh/Kalameh-Regular.ttf") format('truetype');
 }
 
 /*variable*/
@@ -75,12 +75,14 @@
     font-weight: 500;
 }
 /*styles*/
-
+*,*::before,*::after{
+    font-family: Kalameh;
+}
 html{
     font-size: 62.5%;
 }
 body{
-    font-family: 'Kalameh';
+    font-family: Kalameh;
     background-color: var(--body-color);
     font-size: 1.6rem;
 }
