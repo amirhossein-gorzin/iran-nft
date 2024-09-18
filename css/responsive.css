@@ -1,0 +1,496 @@
+@media only screen and (max-width: 1400px) {
+    .site-header__title{
+        font-size: 5.2rem;
+    }
+    .site-header-cover img{
+        height: 49rem;
+    }
+    .hot-offers__nft-box__like-button{
+        left: 3rem;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .nav-list__item {
+        margin-right: 2.5rem;
+        font-weight: 600;
+        font-size: 2rem;
+    }
+    .site-header__text {
+        font-size: 2.4rem;
+    }
+    .site-header__title {
+        font-size: 4.8rem;
+    }
+    .site-header__paragraph {
+        font-size: 2.2rem;
+    }
+    .site-header__search-talk-wrapper{
+        flex-wrap: wrap;
+    }
+    .site-header__talk-button{
+        width: 39rem;
+    }
+    .site-header-cover img{
+        height: 47rem;
+    }
+    .site-header-cover::after{
+        bottom: 2rem;
+    }
+    .hot-offers__nft-box__countdown{
+        right: -6rem;
+    }
+    .top-creator__box-image{
+        width: 9rem;
+        height: 9rem;
+    }
+    .footer__links-title{
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    .footer__link{
+        font-size: 1.9rem;
+    }
+    .footer__description-text{
+        font-size: 1.9rem;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .nav-list {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -35rem;
+        padding: 5rem 1rem;
+        background-color: var(--body-color);
+        height: 100vh;
+        width: 35rem;
+        z-index: 9999;
+        transition: all 0.4s ease;
+    }
+
+    .nav-list__item {
+        margin-right: 0;
+        font-size: 2.2rem;
+        width: 20rem;
+        padding: 3rem 0;
+    }
+
+    .overlay {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(0.7rem);
+        display: none;
+        z-index: 5555;
+    }
+
+    .nav__menu-icon-mobile {
+        display: block;
+    }
+
+    .nav__shopping-mobile {
+        display: block;
+    }
+
+    .nav__shopping-icon,
+    .nav__sign-login-button {
+        display: none;
+    }
+
+    .nav__user-search-icon-mobile {
+        display: block;
+    }
+
+    .site-header__description {
+        text-align: center;
+    }
+
+    .site-header__text {
+        font-size: 3rem;
+    }
+
+    .site-header__title {
+        font-size: 6rem;
+    }
+
+    .site-header-cover-artists-wrapper {
+        display: none;
+    }
+
+    .site-header-cover-artists-wrapper-mobile {
+        display: block;
+    }
+
+    .site-header-cover-artists-wrapper-mobile .site-header-cover img {
+        height: 65rem;
+        margin-top: 5rem;
+    }
+
+    .site-header-artists {
+        bottom: 30rem;
+        right: 18rem;
+    }
+
+    .site-header-cover::before {
+        right: 13rem;
+        top: 8rem;
+    }
+    .site-header__search{
+        display: none;
+    }
+    .site-header__search-talk-wrapper{
+        justify-content: center;
+    }
+    #support{
+        margin-top: 7rem;
+    }
+    .trends__nft-box{
+        height: 38rem;
+    }
+    .trends__nft-box-image{
+        width: 25rem;
+        height: 25rem;
+    }
+    .newsletter__title{
+        font-size: 3.8rem;
+    }
+    .newsletter__caption{
+        font-size: 1.7rem;
+    }
+    .newsletter__email-box{
+        width: 50rem;
+        height: 5.5rem;
+    }
+    .newsletter__email-box-input{
+        font-size: 1.8rem;
+    }
+    .newsletter__email-box-btn{
+        font-size: 2rem;
+    }
+    .footer{
+        padding-top: 4rem;
+    }
+    .footer__description{
+        margin-bottom: 4rem;
+    }
+    .footer__description-ellipse{
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .site-header__text {
+        font-size: 2.4rem;
+    }
+
+    .site-header__title {
+        font-size: 4.6rem;
+    }
+    .site-header-cover-artists-wrapper-mobile .site-header-cover img {
+        height: 55rem;
+    }
+    .site-header-artists {
+        bottom: 30rem;
+        right: 12rem;
+    }
+    .site-header__talk-button{
+        width: 30rem;
+    }
+    .section-head__all-result__text{
+        font-size: 1.8rem;
+    }
+    .section-head__all-result__icon svg{
+        width: 32px;
+        height: 32px;
+    }
+    .section-head__title{
+        font-size: 2.8rem;
+    }
+    .section-head__caption{
+        font-size: 2.2rem;
+    }
+    .hot-offers__nft-box-name{
+        font-size:2.8rem;
+    }
+    .hot-offers__nft-box-creator{
+        font-size: 2rem;
+    }
+    .hot-offers__nft-box__price-icon-wrapper{
+        gap: 0.2rem;
+    }
+    .hot-offers__nft-box__price-text{
+        font-size: 1.6rem;
+    }
+    .hot-offers__nft-box-price{
+        font-size: 1.8rem;
+    }
+    .hot-offers__nft-box-price-icon svg{
+        width: 2rem;
+        height: 2rem;
+    }
+    .hot-offers__nft-box__quick-offer-button{
+        font-size: 1.8rem;
+    }
+    .hot-offers__nft-box__countdown{
+        width: 13rem;
+        height:4rem;
+    }
+    .hot-offers__nft-box__countdown-time{
+        font-size: 1.6rem;
+        margin-left: 0.8rem;
+    }
+    .hot-offers__nft-box__like-button{
+        width:4rem;
+        height: 4rem;
+    }
+    .hot-offers__nft-box__like-button svg{
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+    .information__box{
+        margin-top: 7rem;
+    }
+    .trends__nft-box{
+        height: 32rem;
+    }
+    .trends__nft-box-image{
+        width: 20rem;
+        height: 20rem;
+    }
+    .trends__nft-box-name{
+        font-size: 2.6rem;
+    }
+    .trends__nft-box-price{
+        font-size: 1.8rem;
+        margin-left: 0;
+    }
+    .trends__nft-box-creator{
+        font-size: 1.8rem;
+    }
+    .trends__nft-box-icon{
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    .top-creator__box-description{
+        gap:0.75rem;
+    }
+    .top-creator__box-name{
+        font-size: 1.4rem;
+    }
+    .top-creator__box-price{
+        font-size: 1rem;
+    }
+    .top-creator__box-image{
+        width: 7rem;
+        height: 7rem;
+    }
+    .top-creator__box-icon{
+        width: 7rem;
+    }
+    .newsletter__email-box{
+        width: 40rem;
+    }
+    .newsletter__design-line-left{
+        top: -7rem;
+        left: -7rem;
+    }
+    .newsletter__design-line-right{
+        bottom: -8rem;
+        right: -8rem;
+    }
+    .footer__description{
+        text-align: center;
+        padding: 0;
+    }
+    .footer__social-media-wrapper{
+        padding: 0;
+        margin-bottom: 4rem;
+    }
+    .footer__social-media-title{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    .footer__social-media-items{
+        justify-content: center;
+    }
+    #social-for-pc{
+        display: none;
+    }
+    #social-for-phone{
+        display: block;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .container{
+        padding: 0 2rem;
+    }
+    .site-header{
+        margin-top: 0;
+    }
+    .nav__site-name{
+        display: none;
+    }
+    .nav-list{
+        width: 30rem;
+    }
+    .site-header__text {
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+    .site-header__title {
+        font-size: 4rem;
+        line-height: 6rem;
+    }
+    .site-header-cover-artists-wrapper-mobile .site-header-cover img {
+        height: 40rem;
+        margin: 0 0 8rem 0;
+    }
+    .site-header-artists {
+        bottom: 25rem;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+    .site-header-cover::before{
+        display: none;
+    }
+    .section-head__arm{
+        width: 6rem;
+        height: 6rem;
+    }
+    .section-head__arm svg{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .section-head__title{
+        font-size: 2rem;
+    }
+    .section-head__caption{
+        font-size: 1.8rem;
+    }
+    .hot-offers__nft-box-name{
+        font-size:3.8rem;
+    }
+    .hot-offers__nft-box-creator{
+        font-size: 2.4rem;
+    }
+    .hot-offers__nft-box__price-icon-wrapper{
+        gap: 0.75rem;
+    }
+    .hot-offers__nft-box__price-text{
+        font-size: 2.2rem;
+    }
+    .hot-offers__nft-box-price{
+        font-size: 2.2rem;
+    }
+    .hot-offers__nft-box-price-icon svg{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .hot-offers__nft-box__quick-offer-button{
+        font-size: 2.2rem;
+    }
+    .hot-offers__nft-box__countdown{
+        width: 17rem;
+        height:5.5rem;
+        right: 0;
+    }
+    .hot-offers__nft-box__countdown-time{
+        font-size: 2.2rem;
+        margin-left: 1.2rem;
+    }
+    .hot-offers__nft-box__like-button{
+        width:5.5rem;
+        height: 5.5rem;
+    }
+    .hot-offers__nft-box__like-button svg{
+        width: 3rem;
+        height: 3rem;
+    }
+    .trends__nft-box{
+        height: 47rem;
+    }
+    .trends__nft-box-image{
+        width: 35rem;
+        height: 35rem;
+    }
+    .trends__nft-box-name{
+        font-size: 3.5rem;
+    }
+    .trends__nft-box-price{
+        font-size: 1.8rem;
+        margin-left: 0;
+    }
+    .trends__nft-box-creator{
+        font-size: 1.8rem;
+    }
+    .trends__nft-box-icon{
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    .top-creator__box{
+        padding: 1rem 0.5rem;
+    }
+    .top-creator__box-description{
+        gap: 0.2rem;
+    }
+    .top-creator__box-name{
+        font-size: 1.2rem;
+    }
+    .top-creator__box-price{
+        font-size: 0.8rem;
+    }
+    .top-creator__box-image{
+        width: 4rem;
+        height: 4rem;
+    }
+    .top-creator__box-icon{
+        width: 5rem;
+    }
+    .newsletter__title{
+        font-size: 3rem;
+    }
+    .newsletter__email-box{
+        width: 30rem;
+        height: 5rem;
+    }
+    .newsletter__email-box-input{
+        font-size: 1.6rem;
+    }
+    .newsletter__email-box-btn{
+        font-size: 1.8rem;
+    }
+}
+@media only screen and (max-width: 473px) {
+    .site-header-cover::after{
+        display: none;
+    }
+    .site-header-cover-artists-wrapper-mobile .site-header-cover img {
+        height: 35rem;
+    }
+    .section-head__title{
+        font-size: 1.8rem;
+    }
+    .section-head__caption{
+        font-size: 1.6rem;
+    }
+    .section-head__all-result__text{
+        font-size: 1.4rem;
+    }
+    .nav__close-icon-mobile{
+        left: 3rem;
+    }
+    .trends__nft-box{
+        height: 40rem;
+    }
+    .trends__nft-box-image{
+        width: 30rem;
+        height: 30rem;
+    }
+    .footer__links-wrapper{
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,879 @@
+/*fonts*/
+@font-face {
+    font-family: 'Kalameh';
+    font-weight: 900;
+    font-style: normal;
+    src: url("../font/WebFonts/_Woff/KalamehWeb-Black.woff") format('woff');
+}
+@font-face {
+    font-family: 'Kalameh';
+    font-weight: bold;
+    font-style: normal;
+    src: url("../font/WebFonts/_Woff/KalamehWeb-Bold.woff") format('woff');
+}
+@font-face {
+    font-family: 'Kalameh';
+    font-weight: normal;
+    font-style: normal;
+    src: url("../font/WebFonts/_Woff/KalamehWeb-Regular.woff") format('woff');
+}
+
+/*variable*/
+
+:root{
+    --body-color: #07101D;
+    --primary-color:#FF3C00
+}
+
+/*component*/
+
+.section-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+.section-head__info{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.section-head__title{
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 61px;
+    color: white;
+}
+.section-head__caption{
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.08em;
+    color: white;
+}
+.section-head__arm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 81px;
+    height: 81px;
+    border-radius: 40px;
+    background: linear-gradient(270.13deg, #FF640D 6.95%, rgba(254, 76, 11, 0.975119) 19.3%, rgba(252, 6, 6, 0.903404) 43.99%, rgba(130, 18, 241, 0.81) 95.06%);
+}
+.section-head__text-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-head__all-result{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.section-head__all-result__text{
+    font-size: 22px;
+    font-weight: 500;
+}
+/*styles*/
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Kalameh';
+    background-color: var(--body-color);
+    font-size: 1.6rem;
+}
+a{
+    text-decoration: none;
+}
+
+/*    header styles    */
+
+.header{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    position: relative;
+}
+.header::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -6rem;
+    width: 40rem;
+    height: 50rem;
+    background-image: url("../img/Group 1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__menu-icon-mobile{
+    color: #fff;
+    display: none;
+}
+.nav__site-name{
+    font-size: 4rem;
+    color: white;
+    font-weight: 500;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+.nav-list__item{
+    margin-right: 5rem;
+    color: #949494;
+    font-weight: 600;
+    font-size: 2.1rem;
+}
+.nav-list li:nth-child(1){
+    margin-right: 0;
+}
+.nav-list__item--active{
+    color: var(--primary-color);
+    position: relative;
+}
+.nav-list__item--active::before{
+    content: "";
+    position: absolute;
+    width: 5.3rem;
+    height: 0.1rem;
+    background-color: var(--primary-color);
+    bottom: -1.5rem;
+    left: 0;
+    right: 0;
+    margin:auto;
+}
+.nav__shopping-mobile{
+    width: 22rem;
+    background-color: #fff;
+    border: 2px solid var(--primary-color);
+    font-size: 2.3rem;
+    font-weight: 600;
+    border-radius: 3rem;
+    height: 6rem;
+    color: var(--primary-color);
+    position: relative;
+    margin-bottom: 4rem;
+    display: none;
+}
+.nav__shopping-mobile::before{
+    content: "";
+    width: 15rem;
+    background-color: whitesmoke;
+    height: 2px;
+    position: absolute;
+    bottom: -3rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.nav__left-side{
+    display: flex;
+    align-items: center;
+}
+.nav__user-search-icon-mobile{
+    display: none;
+}
+.nav__search-icon-mobile,
+.nav__user-icon-mobile{
+    color: white;
+    margin: 0.5rem;
+}
+.nav__shopping-icon,.nav__user-icon{
+    color: white;
+}
+.nav__sign-login-button{
+    background-color: var(--primary-color);
+    width: 18.4rem;
+    height: 6.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    margin-right: 2rem;
+}
+.nav__sign-login-button__text{
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin-right: 1rem;
+}
+.nav__close-icon-mobile{
+    color: white;
+    display: none;
+    position: fixed;
+    top: 4rem;
+    left: 7rem;
+    z-index: 6666;
+}
+.site-header{
+    margin-top: 7rem;
+}
+.site-header__description{
+    margin-top: 4rem;
+}
+.site-header__text{
+    font-size: 2.6rem;
+    font-weight: 300;
+    color: white;
+}
+.site-header__title{
+    font-size: 6.4rem;
+    font-weight: 700;
+    color: white;
+    margin: 4rem 0;
+}
+.site-header__title--active{
+    font-size: 6.4rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.site-header__paragraph{
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 4rem;
+}
+.site-header__search-talk-wrapper{
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 2.4rem;
+    position: relative;
+}
+.site-header__search{
+    border: 1px solid var(--primary-color);
+    border-radius: 3rem;
+    width: 39rem;
+    height: 6.8rem;
+    display: flex;
+    align-items: center;
+}
+.site-header__search-icon{
+    color: rgba(255, 255, 255, 0.5);
+    margin-right: 2rem;
+}
+.site-header__search-input{
+    color: rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 2rem;
+    width: 24rem;
+    height: 3.5rem;
+    margin-right: 1rem;
+}
+.site-header__talk-button{
+    width: 29rem;
+    height: 6.8rem;
+    border-radius: 3rem;
+    border: none;
+    background: linear-gradient(to right,#7011AD,#BC0505,#FC630F);
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+.site-header-cover-artists-wrapper{
+    position: relative;
+}
+.site-header-cover-artists-wrapper-mobile{
+    display: none;
+}
+.site-header-cover{
+    position: relative;
+}
+.site-header-cover img{
+    width: 100%;
+    height: 54.7rem;
+}
+.site-header-cover::before{
+    content: "";
+    position: absolute;
+    right: 7rem;
+    top: 5rem;
+    width: 4.5rem;
+    height: 3.5rem;
+    background-image: url("../img/Path (1).png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.site-header-cover::after{
+    content: "";
+    position: absolute;
+    left: 4rem;
+    bottom: 5rem;
+    width: 5.2rem;
+    height: 4.5rem;
+    background-image: url("../img/scribble final version-02 (2).png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.site-header-artists{
+    width: 30rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5rem);
+    position: absolute;
+    bottom: 7rem;
+    right: 5rem;
+    border: 1px solid rgba(255, 255, 255, 0.43);
+    border-radius: 2rem;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+}
+.site-header-artists__image{
+    width: 11.5rem;
+    height: 4.5rem;
+}
+.site-header-artists__text{
+    color: white;
+    font-weight: 600;
+    font-size: 2.4rem;
+    margin-right: 2rem;
+}
+.search-box-modal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 40rem;
+    height: 6rem;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: -10rem;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 3rem;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.4s ease;
+    z-index: 9999;
+}
+.search-box-modal__input{
+    border: none;
+    outline: none;
+    width: 80%;
+    font-size: 2rem;
+}
+
+/*wallet styles*/
+
+
+.wallet{
+    margin-bottom: 10rem;
+}
+.wallet__exchange-wrapper{
+    padding: 0 2rem;
+}
+.wallet__exchange{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    position: relative;
+    margin-top: 2rem;
+    z-index: 1;
+}
+.wallet__exchange::before{
+    content: "";
+    position: absolute;
+    width: 98%;
+    height: 98%;
+    background-color: var(--body-color);
+    z-index: -1;
+}
+.wallet__exchange::after{
+    content: "";
+    position: absolute;
+    width: 4rem;
+    height: 2rem;
+    background-color: var(--body-color);
+    bottom: -0.8rem;
+    right: -1rem;
+    transform: rotate(-45deg);
+}
+#exchange1{
+    background: linear-gradient(317.29deg, #FC280C 8.01%, #07101D 100%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06));
+    border: 1px solid;
+    border-image-source: linear-gradient(317.29deg, #FC280C 8.01%, #07101D 100%);
+}
+#exchange2{
+    background: linear-gradient(314.69deg, #00D1FF 25.82%, #07101D 87.02%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06));
+    border: 1px solid;
+    border-image-source: linear-gradient(314.69deg, #00D1FF 25.82%, #07101D 87.02%);
+}
+#exchange3{
+    background: linear-gradient(314.69deg, #760AFF 13.25%, #07101D 87.02%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06));
+    border: 1px solid;
+    border-image-source: linear-gradient(314.69deg, #760AFF 13.25%, #07101D 87.02%);
+}
+#exchange4{
+    background: linear-gradient(314.69deg, #FE007A 25.82%, #07101D 87.02%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06));
+    border: 1px solid;
+    border-image-source: linear-gradient(314.69deg, #FE007A 25.82%, #07101D 87.02%);
+}
+#exchange5{
+    background: linear-gradient(314.69deg, #FFBF1C 25.82%, #07101D 87.02%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06));
+    border: 1px solid;
+    border-image-source: linear-gradient(314.69deg, #FFBF1C 25.82%, #07101D 87.02%);
+}
+#exchange6{
+    background: linear-gradient(317.29deg, #FC280C 8.01%, #07101D 100%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06));
+    border: 1px solid;
+    border-image-source: linear-gradient(317.29deg, #FC280C 8.01%, #07101D 100%);
+}
+
+.wallet__exchange-img{
+    width: 93px;
+    height: 89px;
+    margin-bottom: 1rem;
+}
+.wallet__exchange-name{
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* hot offers style */
+
+.hot-offers{
+    margin-bottom: 10rem;
+}
+.hot-offers__nft-box{
+    background: #FFFFFF1A;
+    border-radius: 2rem;
+    text-align: left;
+    padding: 2rem;
+    position: relative;
+    margin: 2.5rem 0.5rem 0;
+}
+.hot-offers__nft-box-cover{
+    text-align: center;
+}
+.hot-offers__nft-box-image{
+    width: 100%;
+}
+.hot-offers__nft-box-name{
+    font-size: 32px;
+    line-height: 38px;
+    color: white;
+    display: block;
+    margin: 2rem 0 ;
+}
+.hot-offers__nft-box-creator{
+    font-size: 24px;
+    line-height: 28px;
+    color: white;
+}
+.hot-offers__nft-box__price-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hot-offers__nft-box__price-text{
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 37px;
+    color: white;
+}
+.hot-offers__nft-box__price-icon-wrapper{
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+.hot-offers__nft-box-price{
+    font-weight: 500;
+    font-size: 2.2rem;
+    color: white;
+}
+.hot-offers__nft-box-price span{
+    margin-left: 0.8rem;
+}
+.hot-offers__nft-box__quick-offer{
+    text-align: right;
+}
+.hot-offers__nft-box__quick-offer-button{
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 37px;
+    outline: none;
+    border: none;
+    color: white;
+    width: 20rem;
+    height: 5.3rem;
+    border-radius: 10px;
+    background: linear-gradient(270.13deg, #FF640D 6.95%, rgba(254, 76, 11, 0.975119) 19.3%, rgba(252, 6, 6, 0.903404) 43.99%, rgba(130, 18, 241, 0.81) 95.06%);
+}
+.hot-offers__nft-box__countdown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 17.2rem;
+    height: 5.8rem;
+    top: 3.6rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 13px 18px 13px 17px;
+    border-radius: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1.5rem);
+    
+}
+.hot-offers__nft-box__countdown-time{
+    color: #FFFFFF;
+    font-size: 2.4rem;
+    margin-left: 1.25rem;
+}
+.hot-offers__nft-box__countdown .hot-offers__nft-box__countdown-time:nth-child(3){
+    margin: 0;
+}
+.hot-offers__nft-box__like-button{
+    position: absolute;
+    top: 3.6rem;
+    left: 4rem;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1.5rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*  information styles  */
+.information{
+    margin-bottom: 10rem;
+    margin-top: 15rem;
+}
+#speed{
+    border: 1px solid #00FF1A;
+    background: linear-gradient(135deg, rgba(0, 255, 26, 0.1), rgba(255, 255, 255, 0.1));
+}
+#security{
+    border: 1px solid #5300FF;
+    background: linear-gradient(135deg, rgba(83, 0, 255, 0.1), rgba(255, 255, 255, 0.1));
+
+}
+#support{
+    border: 1px solid #FF1F00;
+    background: linear-gradient(135deg, rgba(255, 31, 0, 0.1), rgba(255, 255, 255, 0.1));
+}
+.information__box{
+    padding: 1.5rem;
+    border-radius: 1rem;
+    position: relative;
+    margin: 0.5rem;
+}
+.information__box-title{
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 54px;
+    color: white;
+    margin: 5rem 0 1rem 0;
+}
+.information__box-description{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 34px;
+    color: white;
+}
+.information__box-icon{
+    position: absolute;
+    top: -4.25rem;
+    right: 3rem;
+    width: 9rem;
+    height: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    border: 1px solid #FFFFFF80;
+    background-color: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(2rem);
+}
+
+/*  trends styles  */
+
+.trends__nft-box-wrapper{
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+.trends__nft-box{
+    text-align: left;
+    height: 47rem;
+    position: relative;
+    margin: 1.5rem 0.5rem;
+}
+.trends__nft-box-mobile{
+    display: none;
+}
+.trends__nft-box-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 88;
+}
+.trends__nft-box-caption{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #FFFFFF1A;
+    border-radius: 2rem;
+    padding: 12rem 2rem 2rem;
+}
+.trends__nft-box-name{
+    font-size: 32px;
+    letter-spacing: 0.08em;
+    color: white;
+}
+.trends__nft-box__price-creator-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.trends__nft-box__price-icon{
+    display: flex;
+    align-items: center;
+}
+.trends__nft-box-price{
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+    margin-left: 0.5rem;
+}
+.trends__nft-box-price span{
+    margin-left: 0.5rem;
+}
+.trends__nft-box-creator{
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    color: white;
+}
+
+/*     top creator styles     */
+.top-creator{
+    margin-bottom: 10rem;
+}
+.top-creator__box{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 1rem;
+    border-radius: 1rem;
+    border: 2px solid #FFFFFF33;
+    background-color: rgba(255, 255, 255, 0.11);
+    padding: 2rem;
+    margin: 2.5rem 0.5rem 0;
+}
+.top-creator__box-description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.5rem;
+    width: 100%;
+}
+.top-creator__box-name{
+    color: white;
+    font-size: 22px;
+    line-height: 26px;
+}
+.top-creator__box-price-info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-creator__box-price{
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+.top-creator__box-price span{
+    margin-left: 0.5rem;
+}
+
+/*    newsletter styles    */
+
+.newsletter{
+    margin-bottom: 10rem;
+}
+
+.newsletter-infos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(90deg, #A50E86 0.16%, #C10B70 24.02%, #E83947 38.73%, #DF330D 55.88%, #C55212 81.05%, #D37506 100%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+    border: 1rem solid rgba(255, 255, 255, 0.1);
+    border-radius: 2rem;
+    padding: 5rem 0 3rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    text-align: center;
+}
+.newsletter__title{
+    font-size: 4.2rem;
+    font-weight: 800;
+    color: white;
+}
+.newsletter__caption{
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+    margin: 3rem 0 5rem;
+    line-height: 2.5rem;
+}
+.newsletter__email-box{
+    width: 59rem;
+    height: 6.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 3rem;
+    background-color: #07101D;
+}
+.newsletter__email-box-input{
+    height: 100%;
+    width: 75%;
+    border-radius: 0 3rem 3rem 0;
+    padding: 0.5rem 2.5rem;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 2.2rem;
+}
+.newsletter__email-box-btn{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: white;
+}
+.newsletter__design-line-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.newsletter__design-line-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+/*    footer styles     */
+
+.footer{
+    background: linear-gradient(0deg, #091028, #091028),
+    linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+    padding: 8rem 0 5rem;
+}
+.footer-wrapper{
+    position: relative;
+}
+.footer__description{
+    padding-left: 1rem;
+}
+.footer__description-title{
+    font-size: 4rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 2rem;
+}
+.footer__description-text{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 37px;
+    color: white;
+    /*text-align: justify;*/
+}
+.footer__description-ellipse{
+    position: absolute;
+    top: -20rem;
+    right: -5rem;
+    z-index: 44444;
+}
+.footer__links-wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+.footer__links{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.footer__links-title{
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: white;
+}
+.footer__link{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 37px;
+    color: white;
+}
+.footer__social-media-wrapper{
+    padding-right: 2rem;
+
+}
+.footer__social-media-title{
+    font-weight: 500;
+    font-size: 2.8rem;
+    color: white;
+    margin-bottom: 5rem;
+}
+.footer__social-media-items{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.footer__social-media-item{
+    width: 5.2rem;
+    height: 5.2rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.footer__social-media-item--active{
+    background: linear-gradient(90deg, #9A5BFF 0%, #FF1212 53.12%, #FF7F56 100%);
+}
+.footer__social-media-link{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#social-for-phone{
+    display: none;
+}
